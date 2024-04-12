@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog de Referências</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Blog de Referências</h1>
+    </header>
+    <nav>
+        <a href="site.html">Home</a> |
+        <a href="Adicionar Imagem.html">Adicionar uma Foto</a> |
+    </nav>
+    <div class="container">
+        <h2>Adicionar Nova Referência</h2>
+        <form id="referenceForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author" required>
+            <label for="content">Conteúdo:</label>
+            <textarea id="content" name="content" rows="5" required></textarea>
+            <input type="submit" value="Adicionar Referência">
+        </form>
+        <h2>Referências</h2>
+        <div id="references"></div>
+    </div>
+
+    <script>
+        document.getElementById('referenceForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let title = document.getElementById('title').value;
+            let author = document.getElementById('author').value;
+            let content = document.getElementById('content').value;
+
+            
+            let post = document.createElement('div');
+            post.classList.add('post');
+
+            
+            post.innerHTML = `
+                <h2>${title}</h2>
+                <p>Por <strong>${author}</strong></p>
+                <p>${content}</p>
+            `;
+
+            
+            document.getElementById('references').appendChild(post);
+
+        
+            document.getElementById('title').value = '';
+            document.getElementById('author').value = '';
+            document.getElementById('content').value = '';
+        });
+    </script>
+   <footer class="footer-section">
+    <div class="container-footer">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-md-4 mb-30">
+                        <div class="footer-logo">
+                          <img src="./Itabira/Memorial_Drummond.jpg" alt="" class="footer">
+                        </div>
+                        <div class="footer-text">
+                            <p>VOCÊ SE DIVERTE E DEIXA OS OUTROS BEM INFORMADO</p>
+                        </div>
+                   
+                </div>
+                <div class=" col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>LINKS</h3>
+                        </div>
+                        <ul>
+                            <li><a href="site.html">Home</a>|</li>
+                            <li><a href="Adicionar Imagem.html">Adicionar uma Foto</a> |</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">                      
+                  <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>E-MAIL</h3>
+                        </div>
+                        <div class="footer-text mb-35">
+                            <p>NÃO DEIXE DE RECEBER AS NOVIDADES</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="E-MAIL">
+                                <button><img src="./Itabira/1513962594EJZT2zWmkc-1024x683.jpg" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container-copy">
+                <div class="col-lg-3,5">
+                    <div class="copyright-text">
+                        <p>Desenvolvido por Márcio Paulo Cardoso Ferreira - PDITA427 - Aluno do Projeto Desenvolve © 2024, Todos os diretos reservados</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div></footer>
+</body>
+</html>

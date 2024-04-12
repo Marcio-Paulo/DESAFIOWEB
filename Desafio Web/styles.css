@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #D5E5F2;
+}
+header {
+    background-color: #14b9b9;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color: #eae0e0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+.post {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.post h2 {
+    margin-top: 0;
+}
+.post p {
+    margin-bottom: 10px;
+}
+.post img {
+    max-width: 100%;
+}
+form {
+    margin-top: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input[type="text"],
+form textarea {
+    background-color: #04BFBF;;
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+form input[type="submit"] {
+    background-color: #04adbf;
+    color: #025959;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+a {
+    color: #14b9b9;
+}
+h1, h2, div { 
+    color: black;
+}
+
+div { 
+    background-color: #C5D9D2;
+}
+
+body{
+      background-image:url(Itabira/1588188952tbKhZ7jXlb-1024x683.jpg) ;
+     background-repeat: repeat;
+     background-position: right; 
+}
+li{
+    list-style-type: none;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+button{
+    border-bottom: blue;
+    border-radius: 40%;
+    border: 5px solid #14b9b9 ;
+}

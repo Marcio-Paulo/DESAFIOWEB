@@ -1,0 +1,41 @@
+.container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .image-preview {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-family: "Bungee Spice", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: blue;
+      }
+
+      form, .imput {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+    body{
+    
+        background-image:url(Itabira/1513962594EJZT2zWmkc-1024x683.jpg) ;
+       background-repeat: repeat;
+       background-position: right; 
+  }
+  header {
+    background-color: #14b9b9;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color: #eae0e0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
